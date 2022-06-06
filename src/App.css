@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700&family=Yeon+Sung&display=swap");
+
+body {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Sans KR";
+  min-height: 100vh;
+  margin: 0px;
+}
+
+@media (min-width: 650px) {
+  .App {
+    width: 640px;
+  }
+}
+
+@media (max-width: 650px) {
+  .App {
+    width: 90vw;
+  }
+}
+
+#root {
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.App {
+  min-height: 100vh;
+  padding: 0px 20px;
+}
+
+/* MyButton */
+.my-button {
+  cursor: pointer;
+  border: none;
+
+  border-radius: 5px;
+  padding: 10px 20px;
+
+  font-size: 18px;
+
+  white-space: nowrap;
+  font-family: "Noto Sans KR";
+}
+
+.my-button-default {
+  background-color: #ececec;
+  color: #000;
+}
+
+.my-button-positive {
+  background-color: #64c964;
+  color: #fff;
+}
+
+.my-button-negative {
+  background-color: #fd565f;
+  color: #fff;
+}
+
+/* HEADER */
+
+header {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+header > div {
+  display: flex;
+}
+
+header .head-text {
+  width: 50%;
+  font-size: 25px;
+  justify-content: center;
+}
+
+header .head-btn-left {
+  width: 25%;
+  justify-content: start;
+}
+
+header .head-btn-right {
+  width: 25%;
+  justify-content: end;
+}
+header button {
+  font-family: "Noto Sans KR";
+}
+
+/* DiatyList */
+
+.diary-list .menu-wrapper {
+  margin: 20px 0px 30px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.diary-list .menu-wrapper .right-col {
+  flex-grow: 1;
+}
+
+.diary-list .menu-wrapper .right-col button {
+  width: 100%;
+}
+
+.diary-list .control-menu {
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ececec;
+
+  padding: 10px 20px;
+
+  cursor: pointer;
+  font-family: "Noto Sans KR";
+  font-size: 18px;
+}
+
+/* DiaryItem */
+
+.diary-item {
+  padding: 15px 0px;
+
+  border-bottom: 1px solid #e2e2e2;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.diary-item .emotion-img-wrapper {
+  cursor: pointer;
+  min-width: 120px;
+  height: 80px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.diary-item .emotion-img-wrapper-1 {
+  background-color: #64c964;
+}
+.diary-item .emotion-img-wrapper-2 {
+  background-color: #9dd772;
+}
+.diary-item .emotion-img-wrapper-3 {
+  background-color: #fdce17;
+}
+.diary-item .emotion-img-wrapper-4 {
+  background-color: #fd8446;
+}
+.diary-item .emotion-img-wrapper-5 {
+  background-color: #fd565f;
+}
+
+.diary-item .emotion-img-wrapper img {
+  width: 50%;
+}
+
+.diary-item .info-wrapper {
+  flex-grow: 1;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.diary-item .diary-date {
+  font-weight: 700;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.diary-item .diary-content-preview {
+  font-size: 18px;
+}
+
+.diary-item .btn-wrapper {
+  min-width: 70px;
+}
