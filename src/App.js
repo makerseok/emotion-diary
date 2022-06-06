@@ -13,7 +13,7 @@ const reducer = (state, action) => {
     case "INIT":
       return action.data;
     case "CREATE":
-      newState = [...action.data, ...state];
+      newState = [action.data, ...state];
       break;
     case "DELETE":
       newState = state.filter((it) => it.id !== action.targetId);
@@ -110,7 +110,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/new" element={<New />} />
-              <Route path="/edit" element={<Edit />} />
+              <Route path="/edit/:id" element={<Edit />} />
               <Route path="/diary/:id" element={<Diary />} />
             </Routes>
           </div>
