@@ -176,6 +176,7 @@ header button {
 }
 
 .diary-item .diary-content-preview {
+  font-family: "Yeon Sung";
   font-size: 18px;
 }
 
@@ -282,4 +283,70 @@ header button {
 .emotion-item-on-5 {
   background-color: #fd565f;
   color: white;
+}
+
+/* Diary */
+
+.diary-page section {
+  width: 100%;
+  margin-bottom: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.diary-page h4 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.diary-page .diary-img-wrapper {
+  background-color: #ececec;
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.diary-page .diary-img-wrapper-1 {
+  background-color: #64c964;
+}
+.diary-page .diary-img-wrapper-2 {
+  background-color: #9dd772;
+}
+.diary-page .diary-img-wrapper-3 {
+  background-color: #fdce17;
+}
+.diary-page .diary-img-wrapper-4 {
+  background-color: #fd8446;
+}
+.diary-page .diary-img-wrapper-5 {
+  background-color: #fd565f;
+}
+
+.diary-page .emotion-descript {
+  font-size: 25px;
+  color: #fff;
+}
+
+.diary-page .diary-content-wrapper {
+  width: 100%;
+  background-color: #ececec;
+  border-radius: 5px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.diary-page .diary-content-wrapper p {
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+  line-height: 2.5;
+  font-family: "Yeon Sung";
 }
