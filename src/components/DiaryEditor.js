@@ -16,9 +16,6 @@ const DiaryEditor = ({ isEdit, originData }) => {
 
   const { onCreate, onEdit, onDelete } = useContext(DiaryDispatchContext);
 
-  const handleClickEmote = (emote) => {
-    setEmotion(emote);
-  };
   const navigate = useNavigate();
 
   const handleSubmit = () => {
@@ -92,7 +89,7 @@ const DiaryEditor = ({ isEdit, originData }) => {
               <EmotionItem
                 key={it.emotionId}
                 {...it}
-                onClick={handleClickEmote}
+                onClick={setEmotion}
                 isSelected={it.emotionId === emotion}
               />
             ))}
